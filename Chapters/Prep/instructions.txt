@@ -1,0 +1,11 @@
+Prep Exercise Instructions:
+
+1.) make a folder named my_folder 
+answer: "mkdir my_folder"
+
+2.) make two files named one.rb and two.rb
+answer: "touch one.rb two.rb"
+
+3.) Print out messages to the screen with both files
+answer: puts "this is file one"
+        puts "this is file two"
