@@ -14,3 +14,6 @@ puts first_name + last_name + " with '+' operator"
 # solution_3:
 full_name = first_name << last_name
 puts full_name << " with '<<' operator."
+
+# book solution
+# puts "Bob" + "Smith"
