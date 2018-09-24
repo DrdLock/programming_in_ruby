@@ -1,0 +1,33 @@
+﻿Task:
+Look at the following programs
+
+x = 0
+
+3.times do 
+  x += 1
+end
+puts x
+
+y = 0
+3.times do
+  y += 1
+  x = y
+end
+puts x
+
+Question:
+What does x print to the screen Do they both give errors? Are the errors different? Why? 
+
+My original Answer:
+For the first problem x is equal to 0 because it is using
+the using the value of x outside of the method invocation
+
+The second problem prints 3 because although y is assigned to x
+in the method invocation, y's value was originally assigned outside
+the method invocation
+
+Correct Answer:
+I was wrong about problem x. Incrementing x by 1 within the times
+iteration saved its value to the variable outside its scope
+
+I was correct about problem 2. The value of x was changed to the value of y
