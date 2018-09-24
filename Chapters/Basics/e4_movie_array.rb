@@ -7,7 +7,8 @@
 # but stores the movie release dates gathered in an array instead
 
 
-# Solution 1 basic application with one line while loop to puts
+# Solution 1 basic application with a while loop
+# to output to screen
 movie_list_1 = {
   star_wars: 1977,
   john_q: 2002,
@@ -26,7 +27,8 @@ while n < year_array_1.length
 end
 
 ######################################################
-# Solution 2 using Hash.new(), user_input, and each iterator
+# Solution 2 using Hash.new(), user_input, and an each method
+# to output to screen
 puts "You will now make your own list of 4 movies with the years they came out."
 puts " "
 movie_list_2 = Hash.new()

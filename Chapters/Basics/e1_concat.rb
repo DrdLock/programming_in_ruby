@@ -6,12 +6,12 @@
 puts "Dread" + " Lock"
 
 
-# solution_2:
+# solution_2 with variables:
 first_name = "Dread "
 last_name = "Lock"
 puts first_name + last_name + " with '+' operator"
 
-# solution_3:
+# solution_3 with '<<' assignment:
 full_name = first_name << last_name
 puts full_name << " with '<<' operator."
 

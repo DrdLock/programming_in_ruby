@@ -11,11 +11,11 @@ def factorial(n)
   return n
 end
 
-num = [5, 6, 7, 8]
+num_array = [5, 6, 7, 8]
 
-num.each do |n|
-  print "#{n}! = "
-  answer = factorial(n)
+num_array.each do |num|
+  print "#{num}! = "
+  answer = factorial(num)
   puts "#{answer}"
 end
 
