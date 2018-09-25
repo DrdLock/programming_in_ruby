@@ -3,12 +3,9 @@
 # that prints the user_name 10 times
 
 #### name.rb ####
-# Solution 1
 puts "Enter in your first name below:"
 user_first_name = gets.chomp
 puts "Welcome " + user_first_name
-
-# Solution 2 with interpolation
 puts "Enter in your last name below:"
 user_last_name = gets.chomp
 ###################

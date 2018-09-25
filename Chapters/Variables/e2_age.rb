@@ -5,7 +5,7 @@
 print "Enter in your age: "
 user_age = Integer(gets.chomp)
 
-# Solution 1 with until loop
+# Solution 1 with an until loop
 y = 10
 until y > 40 do 
   future_age = user_age + y   # declared in the scope of the until loop
