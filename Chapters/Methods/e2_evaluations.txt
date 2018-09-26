@@ -1,0 +1,22 @@
+Question:
+What do the following expressions evaluate to?
+
+1. x = 2
+
+my_answer: 2
+
+2. puts x = 2
+
+my_answer: nil
+
+3. p name = "Joe"
+
+my_answer: nil (wrong this returns "Joe")
+
+4. four = "four"
+
+my_answer: "four"
+
+print something = "nothing"
+
+my_answer: nil
