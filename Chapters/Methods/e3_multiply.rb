@@ -20,6 +20,7 @@ puts multiply(a, b) # should output 30
 #
 # puts multiply(a, b)
 
+
 # Book Solution
 # def multiply(number1, number2)
 #   number1 * number2
