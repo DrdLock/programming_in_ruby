@@ -20,10 +20,10 @@ puts low_to_caps(user_string)
 
 # Solution 2; taken from a stackoverflow example
 # I don't see where all of these method invocations
-#  would be necessary though
+# would be necessary though
 def low_to_caps_2(string)
   if string.length > 10
-    return string.split.map(&:upcase).join(' ') + " with method 2"#...why?
+    return string.split.map(&:upcase).join(' ') + " with method 2" #...why?
   else
     return "String wasn't long enough"
   end
