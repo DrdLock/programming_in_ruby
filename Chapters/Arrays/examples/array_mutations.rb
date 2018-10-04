@@ -8,6 +8,9 @@ puts "This is my original array: #{og_array}"
 array.pop()
 puts "This is my array after pop: #{array}"
 
+array.unshift(0)
+puts "This is my array after adding 0 to the front: #{array}"
+
 array.push('push it')
 puts "This is my array after push: #{array}"
 

@@ -10,3 +10,12 @@ teams.map do |team|
   team.each { |member| print "#{member} " }
   puts ""
 end
+
+# another way with each index
+puts ""
+puts "This is the same result using the each_index method"
+teams.each_index do |n|
+  print "This is team #{n + 1}: "
+  teams[n].each { |member| print "#{member} " }
+  puts""
+end
