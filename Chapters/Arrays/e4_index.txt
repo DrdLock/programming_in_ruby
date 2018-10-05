@@ -1,0 +1,17 @@
+﻿Question:
+What does each method return in the following example?
+
+arr = [15, 7, 18, 5, 12, 8, 5, 1]
+
+1. arr.index(5)
+answer: => 3
+            This occurs because the argument is located at that index
+
+2. arr.index[5]
+answer: => undefined method
+           this is incorrect syntax
+
+3. arr[5]
+answer: => 8
+          This occurs because its the value from index 5
+
