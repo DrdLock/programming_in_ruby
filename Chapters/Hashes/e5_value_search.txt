@@ -1,0 +1,6 @@
+# Question:
+What method could you use to find a specific value in a hash?
+
+Answer: .has_value?()
+
+example: puts hash_name.has_value?(value_name) ? "This is true!" : "This is false!"
