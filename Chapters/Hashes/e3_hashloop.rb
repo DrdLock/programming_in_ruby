@@ -24,15 +24,15 @@ puts "On to the next step..."
 sleep 3
 puts "This is a list of your movies..."
 sleep 2
-puts movie_list.keys.capitalize
+puts movie_list.keys
 sleep 2
 puts "This is a list of your all the genres..."
 sleep 2 
 puts movie_list.values
 sleep 2
-puts "And these are both put togetheri..."
+puts "And these are both put together..."
 sleep 2
-movie_list.each_pair  { |film, type| puts "#{filmi.capitalize} is a #{type} movie." }
+movie_list.each_pair  { |film, type| puts "#{film.capitalize} is a #{type} movie." }
 puts "That's all for now"
 
 ## Book Solution
