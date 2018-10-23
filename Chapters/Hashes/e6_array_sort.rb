@@ -10,7 +10,7 @@ words = ["demo","none", "tied", "evil", "dome", "live",
 
 anagrams = Hash.new()
 
-# Solution 1
+### Solution 1 ###
 words.each do |word|
   sorted_word = word.split("").sort!.join
    
@@ -21,6 +21,7 @@ words.each do |word|
   end
 end
 
+# renames the keys of the anagrams hash table
 i = 1
 while i <= anagrams.length do
   anagrams["group#{i}".to_s] = anagrams.delete(anagrams.keys[i - i])
@@ -29,7 +30,7 @@ end
 
 anagrams.each_pair { |group, array| puts "#{group}: #{array}" }
 
-## Solution 2
+## Solution 2 ##
 # (my first attempt. doesn't fully work but was an interesting approach)
 
 # words.each do |word|
@@ -59,7 +60,7 @@ anagrams.each_pair { |group, array| puts "#{group}: #{array}" }
 # anagrams.each_pair { |group, array| puts "#{group}: #{array}" }
 
 
-## Book Solution
+## Book Solutioni ##
 # result = {}
 #
 # words.each do |word|

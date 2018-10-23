@@ -1,0 +1,5 @@
+Ruby standard classes are collections of libraries that allow you to solve 
+more complex problems and basic problems more efficiently without having
+to reinvent the wheel. for example that Math module has a list of various methods
+that let you solve problems like sqrt(square root) PI(the number pi), cos(to evaluate the cosine),
+amongst many others.

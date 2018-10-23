@@ -1,0 +1,14 @@
+﻿# Question
+# Given the following code, what's the difference between
+# the two hashes? What will they output?
+
+x = "hi there"
+my_hash = {x: "some value"}
+my_hash2 = {x => "some value"}
+
+Answer: 
+my_hash will save space in memory because the key is of type symbol,
+whereas my_hash2 is of type string, which takes up more space in memory.
+
+
+

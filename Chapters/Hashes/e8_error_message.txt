@@ -1,0 +1,9 @@
+﻿# Question:
+# If you see this error, what do you expect to most likely be the problem?
+
+
+‘NoMethodError: undefined method `keys' for Array’
+
+# Answer:
+The programmer attempted to call the method keys on an array when the keys method
+is specifically for calling hash table keys.

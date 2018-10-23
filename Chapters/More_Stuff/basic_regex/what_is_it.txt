@@ -1,0 +1,10 @@
+# Regular expressons are sequences of characters that form pattern
+# matching rules, they are then applied to a string to look for matches.
+# These are commonly used for example:
+# - to search the occurence of a character sequence in a string
+# - to print out a specific list of a words contained in a sentence
+# - to replace a specific sequence of characters with another
+# - as well as other string manipulation tasks
+
+Regular expressions are covered in further detail in the Introduction to Regular Expressions Book
+at launch school
