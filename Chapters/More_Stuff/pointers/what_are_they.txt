@@ -1,0 +1,9 @@
+The simplest explanation is pointers point to a specific address in memory.
+Variables in ruby are pointers to physical space in memory.
+In other words, they are labels that represent some value in a physical address
+space in memory
+For example:
+if 5 is assigned to 'A', then 'A' is pointing to the address space that contains 5
+if 'A' is assigned to 'B, then 'B' isn't pointing to A but is pointing to that same address space that contains 5
+but if 10 is now assigned to 'A', 'A' will now point to the address space that contains 10
+however 'B' will remain pointing to the address space that contains 5 
