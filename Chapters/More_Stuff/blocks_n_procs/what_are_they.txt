@@ -1,0 +1,3 @@
+Some extra details about blocks first!
+Blocks can be passed as arguments into methods like normal variables
+
