@@ -1,3 +1,5 @@
 Some extra details about blocks first!
 Blocks can be passed as arguments into methods like normal variables
-
+Procs are like blocks, but they are "wrapped" in a Proc object.
+Proc objects will be discussed in the object oriented programming section
+of the Launch School course
