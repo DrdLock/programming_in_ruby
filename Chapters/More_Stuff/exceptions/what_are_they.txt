@@ -1,0 +1,8 @@
+Exception handling is used when errors are expected to arise
+in specific parts of our program. These errors could happen for a variety of different
+reasons but most commonly occur from unpredictable user interaction. We can choose how 
+we handle these situations if they happen so our programs don't
+crash with error codes. As a side note, this can also add a bit of security.
+
+in ruby this is applied with the begin/rescue/end block. look examples at examples for
+basic usage
