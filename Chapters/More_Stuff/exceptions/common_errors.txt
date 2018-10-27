@@ -1,0 +1,19 @@
+This is a list of common error types that may occur in ruby
+
+StandardError
+NameError
+TypeError
+ArgumentError
+NoMethodError
+RuntimeError
+SystemCallError
+ZeroDivisionError
+RegexpError
+IOError
+EOFError
+ThreadError
+ScriptError
+SyntaxError
+LoadError
+NotImplentedError
+SecurityError
