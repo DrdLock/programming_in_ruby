@@ -3,7 +3,7 @@
 # of handling an exception
 
 # basic_structure.rb
-puts "Only enter a letter! no number no symbols!"
+puts "Only enter a number! no letters nor symbols!"
 
 begin
   # perform dangerous/unpredictable operation

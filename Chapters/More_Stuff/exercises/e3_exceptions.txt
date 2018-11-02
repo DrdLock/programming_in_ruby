@@ -1,0 +1,12 @@
+Question:
+What is exception handling and how is it useful?
+
+Answer:
+Exception handling allows developers to have more control
+over possible common errors that may occur during the flow
+of program execution.These errors can occur most commonly 
+from incorrect user input. 
+
+This is especially useful to prevent program crashes or potential
+exploitation of known possible vulnerabilities in your program that
+may become visible to end users.
