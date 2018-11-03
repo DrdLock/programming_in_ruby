@@ -1,0 +1,21 @@
+﻿Question :
+
+Why does the following code:
+
+def execute(block)
+  block.call
+end
+
+execute { puts "Hello from inside the execute method!" }
+
+Give us the following error?
+
+block.rb1:in `execute': wrong number of arguments (0 for 1) (ArgumentError)
+from test.rb:5:in `<main>'
+
+Answer:
+An ampersand is required before the block variable in order to pass it
+as an argument to a method in ruby.
+In other words, the line 'def execute(block)' must be changed
+to 'def execute(&block)'.
+
