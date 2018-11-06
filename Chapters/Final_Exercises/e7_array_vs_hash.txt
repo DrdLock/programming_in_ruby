@@ -1,0 +1,11 @@
+Question:
+What's the biggest difference between an array and a hash?
+
+Answer:
+An array is a list of objects of any tip group together under on variable.
+This list can be multidimensional, or an array of other arrays.
+
+A hash is a list of key value pairs that are typically used to create objects.
+For example the characteristics of a car, such as the color, and model; or
+the characteristics of a student, such as their ethnicity and gpa; can be listed
+in a hash with key value pairs.

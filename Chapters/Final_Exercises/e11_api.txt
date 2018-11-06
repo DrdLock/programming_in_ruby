@@ -1,0 +1,9 @@
+Task:
+Look at several Rails/Ruby online API sources and say which one you like best and why.
+
+Answer:
+Right now I have been exploring bot programming for my private discord server that my friends
+and I chat and play games over. So I've really been enjoying learning how to work with the 
+discordrb api. I haven't gotten much out of it yet, but I have managed to make a simple bot
+that responds to certain messages in our chat thanks to the easily accesible documentation for 
+the API.  
