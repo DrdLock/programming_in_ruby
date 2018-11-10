@@ -1,4 +1,8 @@
-﻿# Execrise 12 Task:
+﻿# When doing exercise 12 I decided to turn the exercise into a 
+# full program. It turns out the program also met the requirements
+# of exercises 13 and 14 as well.
+
+# Execrise 12 Task:
 # Given the following data structures. Write a program that moves the 
 # information from the array into the empty hash that applies to the correct
 # person.
@@ -6,6 +10,10 @@
 # Exercise 13 Task:
 # Using the hash you created from the previous exercise,
 # demonstrate how you would access Joe's email and Sally's phone number?
+
+# Exercise 14 Task:
+# Programatically loop or iterate over the contacts hash from exercise 12,
+# and populate the associated data from the contact_data array. 
 
 contact_data = [
                  ["joe@email.com", "123 Main st.", "555-123-4567"],
@@ -15,7 +23,7 @@ contact_data = [
 contacts = {"Joe Smith" => {}, "Sally Johnson" => {}}
 name_array = contacts.keys # store contact names in an array as well
 
-##### Exercise 12 #####
+##### edit and transfer for Exercise 12 #####
 def edit_mode(contacts, contact_data, name_array)
 
   puts "Enter the index number of the contact you'd like to edit or b to go back:" 
@@ -64,7 +72,7 @@ def transfer(name, data, contacts)
   sleep 1
 end
 
-##### Exercise 13 #####
+##### contact viewer for Exercise 13 #####
 def view_mode(contacts, contact_data, name_array)
   puts "Enter in index of the contact you'd like to view. or b to go back"
   name_array.each_with_index { |name, i| puts "#{i + 1}: #{name}" }
@@ -102,6 +110,7 @@ while quit != 'q'
   puts "v to view contact info,"
   puts "e to edit contact info,"
   puts "q to quit." 
+
   menu_option = gets.chomp
   
   case menu_option
