@@ -22,17 +22,20 @@ movie_list_1.each { |movie, year| puts year }
 puts "You will now make your own list of 4 movies with the years they came out."
 puts " "
 movie_list_2 = Hash.new()
+
 i = 1
-while i < 5
+4.times do
   print "Enter in movie #{i}: "
   movie = gets.chomp
   print "What year did #{movie} come out? "
-  year = gets.chomp
-  movie_list_2[movie.to_sym] = year.to_i
+  year = gets.chomp.to_i
+  year = "'Not a valid year...'" if year == 0
+  movie_list_2[movie.to_sym] = year
   puts "Ok. #{movie} has been saved with year #{year}."
-  i += 1
   puts " "
+  i += 1
 end
+
 puts "Here are your movie years!"
 movie_list_2.each { |movie_2, year_2| puts year_2 }
 puts "All done come back soon!"
