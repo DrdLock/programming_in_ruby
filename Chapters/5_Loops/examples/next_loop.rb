@@ -7,6 +7,7 @@ i = 0
 loop do
   i += 1
   next if i == 4
+  sleep 0.5
   puts "This is loop #{i}"
   break if i >= 10
 end

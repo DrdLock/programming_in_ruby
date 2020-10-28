@@ -12,9 +12,7 @@ user_last_name = gets.chomp
 
 user_full_name = "#{user_first_name.capitalize} #{user_last_name.capitalize}"
 # Solution 1
-10.times do
- puts "#{user_full_name}!" 
-end
+10.times { puts "#{user_full_name}" }
 
 puts "...I like that"
 puts "Goodbye for now."

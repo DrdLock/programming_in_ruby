@@ -1,6 +1,7 @@
 # Task:
 # Calculate the squares of three floats of your chooing
 # output your results to the screen
+# add error handling edge case for user input later
 
 # Solution 1
 float_squares = []

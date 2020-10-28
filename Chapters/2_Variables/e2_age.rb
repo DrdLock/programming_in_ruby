@@ -8,11 +8,14 @@ user_age = Integer(gets.chomp)
 # Solution 1 with an until loop
 y = 10
 until y > 40 do 
-  future_age = user_age + y   # declared in the scope of the until loop
+  future_age = user_age + y   # var can be accessed outside the loop
   puts "You will be #{future_age} in #{y} years." 
+  break if y >= 40
   y += 10
 end
 
+puts "The final value of 'y' is #{y}"
+puts "The final value of 'future_age' is #{future_age}"
 
 # Solution 2
 =begin  

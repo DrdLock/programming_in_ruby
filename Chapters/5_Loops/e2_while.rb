@@ -6,14 +6,14 @@
 #
 # choice = "don't stop"
 #
-# while choice != "STOP" do
+# while choice.uppercase != "STOP" do
 #   puts "QUICK FIRST WORD THAT COMES TO MIND!!! (or type STOP)"
 #   choice = gets.chomp
 # end
 #
 # puts "Ending program goodbye for now ;)"
 
-# Solution 2 using do while
+# Solution 2 using do/while
 quit = "not q"
 
 loop do

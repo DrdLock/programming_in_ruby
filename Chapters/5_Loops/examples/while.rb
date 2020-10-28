@@ -1,5 +1,5 @@
 # This is an example taken from the Loops and Iterations
-# Chapter that demonstrates the basic used of 
+# Chapter that demonstrates the basic use of 
 # a while loop
 
 # while.rb

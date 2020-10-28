@@ -12,8 +12,10 @@ def demo(b=0)
   return b
 end
 
-demo(b)
+method_b = demo(b)
+puts " "
 puts "but a is #{a} outside of the method"
 puts " "
 puts "b remains #{b} even when passed into the method"
+puts "but is #{method_b} when we save the returned b."
 

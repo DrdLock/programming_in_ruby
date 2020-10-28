@@ -6,7 +6,7 @@ def equal_to_four(x)
   if x == 4
      puts "yup"
   else
-    puts"nope"
+    puts "nope"
 end
 equal_to_four(5)
 
@@ -18,6 +18,6 @@ Why did you get this error and how can you fix it?
 -------------------------------------------------------
 
 answer: This error message was caused by 
-        not ending the if statement properly,
+        not closing the if statement properly,
         You can add an end on the next line after 
         the call to puts and it will work

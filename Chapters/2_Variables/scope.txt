@@ -31,3 +31,8 @@ I was wrong about problem x. Incrementing x by 1 within the times
 iteration saved its value to the variable outside its scope
 
 I was correct about problem 2. The value of x was changed to the value of y
+
+October 26th, 2020
+I answered the first one correct this time. The reason we the value of x changes to three is because the local variable was initialized and declared outside of the scope of the .times method invocation.
+
+For the second problem my Original "Correct Answer" was wrong too! x will throw an error because x was not created outside of the scope of the .times method before assigning the value of y within the method's scope.

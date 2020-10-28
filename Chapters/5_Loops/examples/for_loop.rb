@@ -6,6 +6,7 @@
 puts "Enter the number of times you want to loop: "
 number = gets.chomp.to_i
 
+#for loop from 1 to the number, inclusive
 for num in 1..number do
   puts "This is loop #{num}."
 end
