@@ -1,6 +1,7 @@
 # This is an example illustrating a couple different
 # common Errors that occur when you try to pass an integer
-# into method that requires a string
+#  into method that requires a string
+#  Remove the comment to see errors
 
 # greeting.rb
 
@@ -10,7 +11,7 @@ end
 
 def greet(person)
   name = space_letters(person)
-  puts "H e l l o  " + name
+  "H e l l o  " + name
 end
 
 def fancy_greeting(name)
@@ -18,6 +19,6 @@ def fancy_greeting(name)
 end
 
 fancy_greeting("John")
-fancy_greeting(1)
+#fancy_greeting(1)
 
 

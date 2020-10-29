@@ -4,11 +4,11 @@
 arr = [["test", "hello", "world"], ["example", "mem"]]
 
 # answer1:
-puts arr[1][0]
+arr[1][0]
 
 # answer2:
-puts arr.last.delete(arr.last.first)
+p arr.last.delete(arr.last.first)
 
 
 ## Book Solution
-# puts arr.last.first
+# arr.last.first

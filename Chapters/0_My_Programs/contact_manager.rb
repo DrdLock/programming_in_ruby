@@ -14,14 +14,10 @@
 # Exercise 14 Task:
 # Programatically loop or iterate over the contacts hash from exercise 12,
 # and populate the associated data from the contact_data array. 
+#
+# Back in 10/29/2020 with things to consider
+# There is a clear recursion problem when moving back and forth between menus that could potentially cause memory to fill quickly. Something to consider
 
-contact_data = [
-                 ["joe@email.com", "123 Main st.", "555-123-4567"],
-                 ["sally@email.com", "404 Not Found Dr.", "123-234-3454"]
-               ]
-
-contacts = {"Joe Smith" => {}, "Sally Johnson" => {}}
-name_array = contacts.keys # store contact names in an array as well
 
 ##### edit and transfer for Exercise 12 #####
 def edit_mode(contacts, contact_data, name_array)
@@ -32,7 +28,9 @@ def edit_mode(contacts, contact_data, name_array)
   current_name = gets.chomp
 
   return if current_name == 'b'
+
   name_num = Integer(current_name) rescue return
+
   if name_array[name_num - 1].nil?
     puts "That name is not in your contact list. Returning to main menu."
     return
@@ -60,6 +58,7 @@ end
 def transfer(name, data, contacts)
   puts "transfering data..."
   
+  # Regex example
   data.each do |type|
     if /@/.match(type)
       contacts[name][:email] = type
@@ -74,7 +73,7 @@ end
 
 ##### contact viewer for Exercise 13 #####
 def view_mode(contacts, contact_data, name_array)
-  puts "Enter in index of the contact you'd like to view. or b to go back"
+  puts "Enter in index number of the contact you'd like to view. or b to go back"
   name_array.each_with_index { |name, i| puts "#{i + 1}: #{name}" }
   
   user_input = gets.chomp
@@ -88,19 +87,34 @@ def view_mode(contacts, contact_data, name_array)
     contact = name_array[contact_index - 1]
   end
 
-  puts "Enter the information you would you like to see? or b to go back."
-  contacts[contact].each_key { |data_type| puts data_type }
+  puts "Enter the index number of the data you would you like to see? or b to go back."
 
-  user_data_type = gets.chomp
-  if user_data_type == 'b'
+  contacts[contact].each_with_index { |(data_type), i| puts "#{i + 1}: #{data_type}" }
+
+  user_input = gets.chomp
+  if user_data_choice == 'b'
     view_mode(contacts, contact_data, name_array)
     return
   end
-  puts "Showing #{user_data_type.downcase} for #{contact}: "
 
-  puts contacts[contact][user_data_type.to_sym.downcase]
-  puts ""
+  # Searching and outputting contact-info by data index
+  contact_info = contacts[contact].keys 
+  data = contacts[contact][contact_info[user_input.to_i - 1]]
+
+  puts "Showing #{contacts[contact].key(data)} for #{contact}: "
+  puts data
+  puts " "
+  sleep 0.5
 end
+
+
+contact_data = [
+                 ["joe@email.com", "123 Main st.", "555-123-4567"],
+                 ["sally@email.com", "404 Not Found Dr.", "123-234-3454"]
+               ]
+
+contacts = {"Joe Smith" => {}, "Sally Johnson" => {}}
+name_array = contacts.keys # store contact names in an array as well
 
 
 #### Main Loop for Both Exercises ####

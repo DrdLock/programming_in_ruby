@@ -14,17 +14,17 @@ end
 puts ''
 
 ### Solution 2 ###
-puts "Solution 2 with the regex operand ~="
-
-sample_array.each do |word_2|
-  if /lab/ =~ word_2.downcase
-    puts word_2
-  else
-    puts "lab not in '#{word_2}'"
-  end
-end
-
-puts "That's all for now."
+# puts "Solution 2 with the regex operand ~="
+#
+# sample_array.each do |word_2|
+#   if /lab/ =~ word_2.downcase
+#     puts word_2
+#   else
+#     puts "lab not in '#{word_2}'"
+#   end
+# end
+#
+# puts "That's all for now."
 
 
 ##### BOOK SOLUTION #####

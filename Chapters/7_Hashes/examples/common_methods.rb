@@ -7,7 +7,8 @@ days = {
   4 => "wednesday",
   5 => "thursday",
   6 => "friday",
-  7 => "saturday"
+  7 => "saturday",
+  8 => "neverday"
 }
 
 # has_key? allows you to check if a hash has a specific key
@@ -32,3 +33,9 @@ puts days.keys
 # retrieve all the values
 puts "All the values"
 puts days.values
+sleep 2
+puts "Wait a minute...what's that last day?"
+sleep 2
+days.delete(8)
+puts days.values
+puts "That's better!"

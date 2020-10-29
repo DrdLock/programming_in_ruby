@@ -3,7 +3,7 @@
 
 # Answer: 
 # merge! with the bang changes the original hash in memory 
-# while merge only changes the hash in that specific isntance
+# while merge only changes the hash in that specific instance
 
 
 
@@ -23,10 +23,10 @@ hash2 = {
 puts "this is hash 1: #{hash1}"
 puts "this is hash 2: #{hash2}"
 puts "Now merging using merge..."
-sleep 5
+sleep 3
 puts "This is hash 1 and hash 2 using merge: #{hash1.merge(hash2)} "
 sleep 3
-puts "But this is is still hash 1: #{hash1}"
+puts "But this is still hash 1: #{hash1}"
 puts "Now merging using merge!..."
 hash1.merge!(hash2)
 sleep 3

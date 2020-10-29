@@ -12,19 +12,20 @@ anagrams = Hash.new()
 
 ### Solution 1 ###
 words.each do |word|
-  sorted_word = word.split("").sort!.join
+  sorted_word = word.split("").sort.join
    
   if anagrams.has_key?(sorted_word.to_s)
-    anagrams[sorted_word.to_s] << word
+    anagrams[sorted_word.to_s] << word #equivalent to hash[key].push(value)
   else
     anagrams[sorted_word.to_s] = [word]
   end
+
 end
 
-# renames the keys of the anagrams hash table
+# replaces the keys of the anagrams hash table with group names 
 i = 1
 while i <= anagrams.length do
-  anagrams["group#{i}".to_s] = anagrams.delete(anagrams.keys[i - i])
+  anagrams["group#{i}".to_s] = anagrams.delete(anagrams.keys[0])
   i += 1
 end 
 
@@ -60,7 +61,7 @@ anagrams.each_pair { |group, array| puts "#{group}: #{array}" }
 # anagrams.each_pair { |group, array| puts "#{group}: #{array}" }
 
 
-## Book Solutioni ##
+## Book Solution ##
 # result = {}
 #
 # words.each do |word|

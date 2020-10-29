@@ -5,7 +5,7 @@ arr = [15, 7, 18, 5, 12, 8, 5, 1]
 
 1. arr.index(5)
 answer: => 3
-            This occurs because the argument is located at that index
+            This occurs because .index() returns the index where the arg is located. 
 
 2. arr.index[5]
 answer: => undefined method

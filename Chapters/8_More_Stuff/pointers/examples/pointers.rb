@@ -31,6 +31,7 @@ sleep 4
 puts "the object that 'c' points to is now #{c} with same object id: #{c.object_id}"
 puts "but 'b' also points to that same object and id!!!              #{b.object_id}"
 sleep 4
+puts "Because this is now 'b' as well: #{b}"
+sleep 4
 puts ":0...that's all for now."
-
 

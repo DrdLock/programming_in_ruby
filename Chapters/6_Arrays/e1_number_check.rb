@@ -6,7 +6,7 @@
 array = [1, 3, 5, 7, 9, 11]
 puts "Enter in a number between 1 and 11:"
 number = gets.chomp.to_i
-puts array.include?(number) ? "#{number} is in the array." : "#{number} isn't the array." 
+puts array.include?(number) ? "#{number} is in the array." : "#{number} isn't in the array." 
 
 ## Book Solution 
 # array.each do |num|

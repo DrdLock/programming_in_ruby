@@ -11,7 +11,7 @@ execute { puts "Hello from inside the execute method!" }
 # My guess: A method error
 # Correct Answer: nil
 
-### Correct use ###
+### Correct use with a block.call ###
 # def execute(&block)
 #   block.call
 # end

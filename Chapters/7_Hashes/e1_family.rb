@@ -3,7 +3,6 @@
 # to gather together the immediate family members to put
 # in a seperate array
 
-# I created my own family list so I left out the book solution
 
 # Solution 1
 my_family = {
@@ -24,7 +23,7 @@ extended_fam = my_family.select do |role, name|
 end
 
 puts "HI!!! This is my immediate family..."
-sleep 2
+sleep 1
 immediate_fam.each do |role, name|
   if role == :brothers
     my_family[:brothers].each { |bro| puts "brother: #{bro}" }
@@ -40,7 +39,17 @@ sleep 2
 extended_fam.each do |role, name_list|
   print "#{role}s: "
   extended_fam[role].each { |name| print "#{name} " }
-  puts ""
+  puts " "
 end
 
 puts "That's all for now"
+
+# Book Solution
+#
+# immediate_family = family.select do |k, v|
+#   k == :sisters || k == :brothers
+# end
+#
+# arr = immediate_family.values.flatten
+#
+# p arr

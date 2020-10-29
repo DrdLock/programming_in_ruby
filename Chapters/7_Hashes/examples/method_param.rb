@@ -6,11 +6,9 @@ def greeting(name, options = {})
   print "Hi my name is #{name} "
   if options.empty?
     puts " What else about me?..."
-  end
-  if options[:age] 
+  elsif options[:age] 
     puts "I'm #{options[:age]} years old."  
-  end
-  if options[:city]
+  elsif options[:city]
     puts "I live in #{options[:city]}."
   end
 end
